@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+    <link rel="icon" type="image/png" href="img/money3.png">
+</head>
+<body onload="functionbut(), changeColor()" class="preLoad">
+    
+    <h1 class="h11">Currency Converter</h1>
+
+    <div class="div1">
+
+    <p class="p1">Choose the currency that you want convert: <select id="select1" class="input1" onclick="functionbut()">
+        <option value="0" id="eur">EUR€</option>
+        <option value="1" id="usd">USD$</option>
+        <option value="2" id="gbp">GBP£</option>
+    </select></p>
+
+    <p class="p1">Choose the currency that you want convert to: <select id="select2" class="input1" onclick="functionbut()">
+        <option value="0" id="eur">EUR€</option>
+        <option value="1" id="usd">USD$</option>
+        <option value="2" id="gbp">GBP£</option>
+    </select></p>
+
+    <br>
+    <input type="number" id="input1" oninput="functionbut()" class="input1" placeholder="Amount:"><span id="curd1" class="p1"></span><span class="p1" id="lygu"></span><span id="final1" class="p1"></span></p>
+    
+    <button id="button1" class="input1" onclick="changeColor()">Color changer</button>
+    </div>
+
+    <footer>
+        <p class="p2">&copyNavyciokas</p>
+    </footer>
+</body>
+<!-- Navyciok 2023 -->
+</html>
